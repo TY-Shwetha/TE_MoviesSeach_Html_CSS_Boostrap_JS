@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/rstyle.css">   
+    <title>Registration</title>
+    
+</head>
+<style>
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {       
+    background-color: black;
+}
+
+#h3 {
+    padding-left: 95px;
+    padding-bottom: 20px;
+    color: red;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#form1 {
+    margin-top: 30px;
+    border: 1px solid black;
+    background-color: white;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+label{
+  color: blue;
+  font-weight: bold;
+}
+#submit {
+    padding-left: 315px;
+    padding-top: 25px;
+}       
+
+
+</style>
+<body>
+    
+    <div class="col-md-4 offset-md-4">  
+       
+  
+          <form id="form1" name="registerForm" method="GET">
+            <center > <h3 style="margin-top: 10px;color: red;padding-bottom: 10px;font-weight: bold;">
+             Registration Form</h3></center> 
+            <p>**Fill the details!!</p>
+            <div class="col-12">
+              <label for="inputfname" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="inputfname" name="inputfname" required>
+            </div>
+  
+            <div class="col-12">
+              <label for="inputlname" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="inputname" name="inputlname" required>
+            </div>
+    
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="col-12">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+          
+            <div class="col-12">
+              <label for="gender" class="form-label">Gender</label>
+              <select id="gender" class="form-select" name="gender" required>
+                <option selected>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
+    
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address"  name="address" placeholder="1234 Main St" required>
+            </div>
+          
+            <div class="col-12">
+                <label for="inputcourse" class="form-label">Type of movies you like?</label>
+                <select name="inputcourse" id="inputcourse" class="form-select">
+                  <option value="select">Select</option>
+                  <option value="Java full stack">Romantic</option>
+                  <option value="Mean stack">Funny</option>
+                  <option value="Mern stack">Sentimental</option>
+                  <option value="Sql">Comedy</option>
+                </select>
+              </div>
+
+
+            <br>
+            <div id="submit" class="col-md-6">
+                <button onclick="return onRegister()" type="submit" class="btn btn-primary ">Register</button>
+                
+            </div>
+            <br>
+          </form>
+        </div>
+  
+       <script src="./register.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  
+  
+
+
+
+
+</body>
+</html>

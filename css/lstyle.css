@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {        
+    background-color:black;
+}
+
+#h3 {
+    padding-left: 165px;
+    padding-bottom: 20px;
+    color: red;
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+
+#loginform {
+    margin-top: 80px;
+    border: 1px solid black;
+    background-color: white;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border-radius: 35px;
+    margin-bottom: 10px;
+}
+
+
+#submit {
+    padding-left: 120px;
+    padding-top: 25px;
+}
+
+input[type="email"]{ 
+        text-align: center;
+    }
+    input[type="password"] { 
+        text-align: center;
+    }
